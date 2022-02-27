@@ -4,4 +4,4 @@ phases:
   build: 
     commands: 
        - aws s3 sync . s3://aw-email-template-test-cicd/  --exclude "*.yml"
-       - mv buildspec.yml
+       - mv ./buildspec.yml
