@@ -1,0 +1,9 @@
+version: 0.2
+
+env:
+  variables:
+      S3_BUCKET: aw-email-template-test-cicd
+
+build:  
+  commands:
+- aws s3 cp * s3://${S3_BUCKET}
