@@ -3,4 +3,4 @@ version: 0.2
 phases:
   build: 
     commands: 
-       - aws s3 cp aw-email-templates/* s3://aw-email-template-test-cicd/
+       - aws s3 * s3://aw-email-template-test-cicd/
