@@ -3,5 +3,5 @@ version: 0.2
 phases:
   build: 
     commands: 
-       - aws s3 sync . s3://aw-email-template-test-cicd/  --exclude "*.yml"
+       - aws s3 sync . s3://aw-email-template-test-cicd/  --exclude "*.yml"  --exclude "*.md"
       - aws s3 rm  s3://aw-email-template-test-cicd/README.md
